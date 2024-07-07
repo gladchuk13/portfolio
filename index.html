@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Портфоліо Гладчука Артема</h1>
+    <div class="container">
+        
+        <div class="block">
+            <a href="https://gladchuk13.github.io/another-archive/" target="_blank">
+            
+            </a>
+        </div>    
+        
+        <div class="block">
+            <a href="https://gladchuk13.github.io/project/" target="_blank">
+            
+            </a>
+        </div>
+        <div class="block">
+            <a href="https://gladchuk13.github.io/slider-two/" target="_blank">
+            
+            </a>
+            
+        </div>
+        <div class="block">
+            <a href="https://gladchuk13.github.io/card_writer/" target="_blank">
+            
+            </a>
+        </div>
+        
+        <div class="block">
+            <a href="https://gladchuk13.github.io/part-of-project/" target="_blank">
+            
+        </a>
+    </div>
+        <div class="block">
+            <a href="https://gladchuk13.github.io/maket/" target="_blank">
+            
+            </a>
+        </div>
+        
+        <div class="block">
+            <a href="https://gladchuk13.github.io/goit-js-hw-08-gallery/" target="_blank">
+            
+            </a>
+        </div>
+        <div class="block">
+            <a href="https://gladchuk13.github.io/archive09-22/" target="_blank">
+            
+            </a>
+        </div>
+    </div>
+    <script>
+        let textToType = "Портфоліо Гладчука Артема"; 
+ 
+        let outputElement = document.querySelector(".title"); 
+        outputElement.textContent = ""; 
+
+        function typeText(index) { 
+        if (index < textToType.length) { 
+            outputElement.textContent += textToType.charAt(index); 
+            index++; 
+            setTimeout(function() { 
+            typeText(index); 
+            }, 200); 
+        } 
+        } 
+
+        setTimeout(function() { 
+        typeText(0); 
+        }, 700); 
+    </script>
+</body>
+</html>
